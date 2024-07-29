@@ -1,16 +1,19 @@
 {
-  "name": "HtmlBuilder_installer",
-  "version": "1.0.0",
+  "name": "HtmlBuilderInstaller",
+  "version": "1.0.1",
+  "main": "index.js",
   "type": "module",
-  "main": "install.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron ."
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "author": "Nazarov A.A",
+  "license": "MIT",
+  "description": "Installs HtmlBuilder",
+  "devDependencies": {
+    "electron": "^31.3.0"
+  },
   "dependencies": {
-    "nz_installer": "^1.0.2"
+    "nz_installer": "^1.0.3"
   }
 }

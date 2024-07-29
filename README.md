@@ -6,5 +6,5 @@ Run
 
 ```
 npm install
-node install.js
+npm start
 ```

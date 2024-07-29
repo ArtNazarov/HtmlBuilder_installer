@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>HtmlBuilder Installer</title>
+    <style>
+        body {
+    background: brown;
+        }
+
+        div#wrapper {
+            margin: 0px auto;
+            background-color: antiquewhite;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px;
+            box-shadow: #000 1px 1px 3px;
+            text-align: center;
+        }
+        
+    
+
+  
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+        <h1>Install HtmlBuilder</h1>
+        <div><input type="text" id="targetDir" name="targetDir" placeholder="Type directory: /home/username/test_folder/"/></div>
+        <div><button id="select-folder">Install to this directory</button></div>
+        <div>Installation code https://github.com/ArtNazarov/HtmlBuilder_installer</div>
+    </div>
+    <script>
+     document.getElementById('select-folder').addEventListener('click', () => {
+         window.postMessage({
+             type: 'installation',
+             payload: document.getElementById('targetDir').value
+             })
+    });
+    </script>
+  </body>
+</html>
