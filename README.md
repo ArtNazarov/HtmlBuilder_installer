@@ -5,5 +5,6 @@ Installs [HtmlBuilder](https://github.com/ArtNazarov/HtmlBuilder) using [nz_inst
 Run
 
 ```
+npm install
 node install.js
 ```
